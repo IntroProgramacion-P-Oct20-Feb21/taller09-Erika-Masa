@@ -23,13 +23,28 @@ public class Ejercicio05 {
             "Alcides"};
         String inicial;
         boolean bandera = true;
+        
+        String inicialArreglo;
+
         while(bandera){
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
+             inicial = inicial.toUpperCase();
+           
+              for(int i = 0;i < estudiantes.length; i++) {
+               
+                inicialArreglo= estudiantes[i].substring(0, 1);
+               
+                if (inicial.equals(inicialArreglo)) {
+                    bandera = false;
                     
         }
         
         
-    }
+    
+                }
+            }
+        
 
+}
 }
